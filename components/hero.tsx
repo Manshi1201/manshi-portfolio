@@ -16,23 +16,13 @@ export function Hero() {
   const [displayText, setDisplayText] = useState("")
   const [isDeleting, setIsDeleting] = useState(false)
 
-  const handleDownloadResume = async () => {
-    try {
-      const response = await fetch("/resume.pdf")
-      if (!response.ok) throw new Error("Failed to download resume")
-      const blob = await response.blob()
-      const url = window.URL.createObjectURL(blob)
-      const link = document.createElement("a")
-      link.href = url
-      link.download = "Manshi_Kumari_Resume.pdf"
-      document.body.appendChild(link)
-      link.click()
-      document.body.removeChild(link)
-      window.URL.revokeObjectURL(url)
-    } catch (error) {
-      console.error("Download failed:", error)
-      window.open("/resume.pdf", "_blank")
-    }
+  const handleDownloadResume = () => {
+    const link = document.createElement("a")
+    link.href = "/Manshi_Kumari_Resume.pdf"
+    link.download = "Manshi_Kumari_Resume.pdf"
+    document.body.appendChild(link)
+    link.click()
+    document.body.removeChild(link)
   }
 
   useEffect(() => {
@@ -126,7 +116,7 @@ export function Hero() {
         <div className="animate-fade-in order-1 flex justify-center lg:order-2">
           <div className="glow-border relative h-64 w-64 overflow-hidden rounded-full border-4 border-primary/30 sm:h-80 sm:w-80">
             <Image
-              src="/profile photo.jpeg"
+              src="/profile-photo.jpg"
               alt="Manshi Kumari - Engineering Student"
               fill
               sizes="(max-width: 640px) 256px, (max-width: 1024px) 320px, 320px"
