@@ -116,7 +116,7 @@ export function Hero() {
         <div className="animate-fade-in order-1 flex justify-center lg:order-2">
           <div className="glow-border relative h-64 w-64 overflow-hidden rounded-full border-4 border-primary/30 sm:h-80 sm:w-80">
             <Image
-              src="/profile-photo.jpg"
+              src="/profile%20photo.jpeg"
               alt="Manshi Kumari - Engineering Student"
               fill
               sizes="(max-width: 640px) 256px, (max-width: 1024px) 320px, 320px"

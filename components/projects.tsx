@@ -5,7 +5,7 @@ const projects = [
   {
     title: "AYUSH EMR Integration",
     subtitle: "Smart India Hackathon",
-    image: "/symbiomed.jpg",
+    image: "/symbiomed.jpg.png",
     description:
       "Developed an API for integrating AYUSH medical records with EMR systems, enabling ICD-11 and AYUSH NAMASTE mapping for healthcare data standardization.",
     tech: ["Python", "REST API", "Healthcare", "ICD-11"],
@@ -18,7 +18,7 @@ const projects = [
   {
     title: "Carbon Footprint Tracker",
     subtitle: "AI-Based System",
-    image: "/carbon-tracker.jpg",
+    image: "/carbon%20tracker.jpg.png",
     description:
       "An AI-powered system for tracking carbon emissions with daily, weekly, and yearly analytics, featuring a comprehensive dashboard for sustainability metrics.",
     tech: ["Python", "AI/ML", "Data Analytics", "Dashboard"],
@@ -31,7 +31,7 @@ const projects = [
   {
     title: "AI-Powered Online Voting",
     subtitle: "Secure Digital Platform",
-    image: "/voting.jpg",
+    image: "/voting.jpg.png",
     description:
       "A secure digital voting platform with AI voter assistance, vote verification & analysis, ensuring transparency and accessibility in the voting process.",
     tech: ["Python", "AI", "Security", "Cloud"],
@@ -117,7 +117,9 @@ export function Projects() {
               {/* Actions */}
               <div className="flex gap-3 px-6 pb-6">
                 <a
-                  href="#"
+                  href="https://github.com/Manshi1201"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="inline-flex items-center gap-1.5 text-sm text-muted-foreground transition-colors hover:text-primary"
                 >
                   <Github size={14} />

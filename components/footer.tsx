@@ -1,4 +1,4 @@
-import { Linkedin, Mail, Award } from "lucide-react"
+import { Linkedin, Mail, Award, Github } from "lucide-react"
 
 export function Footer() {
   return (
@@ -14,6 +14,15 @@ export function Footer() {
             aria-label="Email"
           >
             <Mail size={18} />
+          </a>
+          <a
+            href="https://github.com/Manshi1201"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-muted-foreground transition-colors hover:text-primary"
+            aria-label="GitHub"
+          >
+            <Github size={18} />
           </a>
           <a
             href="https://linkedin.com"
