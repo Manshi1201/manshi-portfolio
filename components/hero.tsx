@@ -16,14 +16,7 @@ export function Hero() {
   const [displayText, setDisplayText] = useState("")
   const [isDeleting, setIsDeleting] = useState(false)
 
-  const handleDownloadResume = () => {
-    const link = document.createElement("a")
-    link.href = "/Manshi_Kumari_Resume.pdf"
-    link.download = "Manshi_Kumari_Resume.pdf"
-    document.body.appendChild(link)
-    link.click()
-    document.body.removeChild(link)
-  }
+
 
   useEffect(() => {
     const role = roles[currentRole]
@@ -95,13 +88,14 @@ export function Hero() {
               View My Work
               <ArrowDown size={16} />
             </a>
-            <button
-              onClick={handleDownloadResume}
+            <a
+              href="/Manshi_Kumari_Resume.pdf"
+              download="Manshi_Kumari_Resume.pdf"
               className="inline-flex items-center gap-2 rounded-lg border border-border px-6 py-3 text-sm font-semibold text-foreground transition-all hover:border-primary hover:text-primary"
             >
               <Download size={16} />
               Download Resume
-            </button>
+            </a>
             <a
               href="#contact"
               className="inline-flex items-center gap-2 rounded-lg border border-border px-6 py-3 text-sm font-semibold text-foreground transition-all hover:border-accent hover:text-accent"
