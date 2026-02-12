@@ -18,7 +18,7 @@ const projects = [
   {
     title: "Carbon Footprint Tracker",
     subtitle: "AI-Based System",
-    image: "/carbon tracker.png",
+    image: "/carbon-tracker.png",
     description:
       "An AI-powered system for tracking carbon emissions with daily, weekly, and yearly analytics, featuring a comprehensive dashboard for sustainability metrics.",
     tech: ["Python", "AI/ML", "Data Analytics", "Dashboard"],
@@ -117,7 +117,9 @@ export function Projects() {
               {/* Actions */}
               <div className="flex gap-3 px-6 pb-6">
                 <a
-                  href="#"
+                  href="https://github.com/Manshi1201"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="inline-flex items-center gap-1.5 text-sm text-muted-foreground transition-colors hover:text-primary"
                 >
                   <Github size={14} />

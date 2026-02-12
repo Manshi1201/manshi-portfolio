@@ -3,7 +3,7 @@
 import React from "react"
 
 import { useState } from "react"
-import { Mail, Phone, Linkedin, Send, CheckCircle, AlertCircle } from "lucide-react"
+import { Mail, Github, Linkedin, Send, CheckCircle, AlertCircle } from "lucide-react"
 
 export function Contact() {
   const [formData, setFormData] = useState({
@@ -83,20 +83,22 @@ export function Contact() {
             </a>
 
             <a
-              href="tel:+919354102208"
+              href="https://github.com/Manshi1201"
+              target="_blank"
+              rel="noopener noreferrer"
               className="glass glow-border group flex items-center gap-4 rounded-xl p-5 transition-all"
             >
               <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-lg bg-accent/10 text-accent group-hover:bg-accent/20">
-                <Phone size={22} />
+                <Github size={22} />
               </div>
               <div>
-                <p className="text-xs text-muted-foreground">Phone</p>
-                <p className="font-medium text-foreground">+91-9354102208</p>
+                <p className="text-xs text-muted-foreground">GitHub</p>
+                <p className="font-medium text-foreground">github.com/Manshi1201</p>
               </div>
             </a>
 
             <a
-              href="https://linkedin.com"
+              href="https://linkedin.com/in/manshi75kumari"
               target="_blank"
               rel="noopener noreferrer"
               className="glass glow-border group flex items-center gap-4 rounded-xl p-5 transition-all"
