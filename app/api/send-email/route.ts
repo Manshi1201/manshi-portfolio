@@ -1,4 +1,3 @@
-import { Resend } from 'resend';
 import { NextRequest, NextResponse } from 'next/server';
 
 export async function POST(request: NextRequest) {
@@ -12,11 +11,11 @@ export async function POST(request: NextRequest) {
       );
     }
 
+    const { Resend } = await import('resend');
     const resend = new Resend(apiKey);
 
     const { name, email, message } = await request.json();
 
-    // Validate form data
     if (!name || !email || !message) {
       return NextResponse.json(
         { error: 'Missing required fields' },
@@ -24,7 +23,6 @@ export async function POST(request: NextRequest) {
       );
     }
 
-    // Validate email format
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     if (!emailRegex.test(email)) {
       return NextResponse.json(
@@ -33,7 +31,6 @@ export async function POST(request: NextRequest) {
       );
     }
 
-    // Send email using Resend
     const data = await resend.emails.send({
       from: 'noreply@resend.dev',
       to: 'manshi75kumari@gmail.com',

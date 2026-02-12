@@ -5,7 +5,7 @@ const projects = [
   {
     title: "AYUSH EMR Integration",
     subtitle: "Smart India Hackathon",
-    image: "/symbiomed.jpg.png",
+    image: "/symbiomed.png",
     description:
       "Developed an API for integrating AYUSH medical records with EMR systems, enabling ICD-11 and AYUSH NAMASTE mapping for healthcare data standardization.",
     tech: ["Python", "REST API", "Healthcare", "ICD-11"],
@@ -18,7 +18,7 @@ const projects = [
   {
     title: "Carbon Footprint Tracker",
     subtitle: "AI-Based System",
-    image: "/carbon%20tracker.jpg.png",
+    image: "/carbon-tracker.png",
     description:
       "An AI-powered system for tracking carbon emissions with daily, weekly, and yearly analytics, featuring a comprehensive dashboard for sustainability metrics.",
     tech: ["Python", "AI/ML", "Data Analytics", "Dashboard"],
@@ -31,7 +31,7 @@ const projects = [
   {
     title: "AI-Powered Online Voting",
     subtitle: "Secure Digital Platform",
-    image: "/voting.jpg.png",
+    image: "/voting.png",
     description:
       "A secure digital voting platform with AI voter assistance, vote verification & analysis, ensuring transparency and accessibility in the voting process.",
     tech: ["Python", "AI", "Security", "Cloud"],
