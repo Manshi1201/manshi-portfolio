@@ -98,7 +98,7 @@ export function Contact() {
             </a>
 
             <a
-              href="https://linkedin.com"
+              href="https://linkedin.com/in/manshi75kumari"
               target="_blank"
               rel="noopener noreferrer"
               className="glass glow-border group flex items-center gap-4 rounded-xl p-5 transition-all"
